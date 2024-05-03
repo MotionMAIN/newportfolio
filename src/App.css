@@ -2,37 +2,73 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeSection{
+  position: relative;
+  background-image: url('./assets/Background.png'); /* Pfad zu deinem Bild */
+  background-size: cover; /* Stellt sicher, dass das Bild den Container vollständig abdeckt */
+  background-position: center; /* Zentriert das Bild */
+  background-repeat: no-repeat;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: transparent;
+}
+
+.homeSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Höhe des Overlays */
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #121212);
+}
+
+.rightContent {
+  position: absolute;
+  top: 50%;
+  right: 5%; /* Oder je nachdem, wie weit es vom rechten Rand entfernt sein soll */
+  transform: translateY(-50%);
+  text-align: center; /* Falls es Text oder Icons enthält */
+  /* Weitere Styling-Optionen nach Bedarf */
+}
+
+
+.skillsSection{
+  height: 100vh;
+  background-color: transparent;
+}
+
+.projectsSection{
+  height: 600px;
+  background-color: transparent;
+}
+
+.aboutMeSection{
+  height: 600px;
+  background-color: transparent;
+}
+
+.contactSection{
+  height: 600px;
+  background-color: transparent;
+}
+
+.sectionHeader {
+  color: #E6E6E6;
+  display: inline-block;
+  border: 2px solid #BB86FC;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
+
+.arrowButtonPosition{
+  border-radius: 50%;
+  border: 4px solid #333;
+  cursor: pointer;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
 }

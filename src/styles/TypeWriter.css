@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@400,500,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    place-items: center;
+}
+
+.wrapper{
+    width: 50vw; /* 50% der Viewport-Breite */
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Zentriert das Element horizontal */
+    transform: translate(-50%, -50%); /* Zentriert das Element vertikal und horizontal */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    white-space: nowrap;
+}
+
+.bigStaticText{
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+}
+
+.smallThicStaticText{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.smallThinStaticText{
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+}
+
+.multiText {
+    font-size: 25px;
+    font-weight: 800;
+    color: #E0E0E0;
+    display: inline; /* oder inline-block, je nach Bedarf */
+}
+
+.staticText{
+    font-size: 60px;
+    display: inline-flex;
+    white-space: nowrap;
+    color: white;
+    margin-right: 0.5em;
+}
+
+.typingWrapper {
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
+.typed-cursor {
+    font-size: 25px;
+    vertical-align: bottom;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .multiText{
+        font-size: 45px;
+    }
+    .wrapper{
+        width: 800px;
+        color: white;
+        font-size: 40px;
+        height: 2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        /* Anpassungen für den wrapper */
+        align-items: center; /* Zentriert die Kinder horizontal */
+        text-align: center; /* Zentriert den Text in den Blockelementen */
+    }
+
+    .typingWrapper {
+        /* Anpassungen für das Flexbox-Container, die das "A" und den Typed.js-Text enthält */
+        justify-content: flex-start; /* Die Elemente am Anfang des Containers ausrichten */
+        flex-wrap: nowrap; /* Verhindert das Umbruch der Elemente */
+    }
+
+    .aText {
+        /* Anpassungen für das "A" */
+        font-size: 30px; /* Die Größe der Schriftart anpassen, um sie an den animierten Text anzupassen */
+        margin-right: 10px; /* Platz rechts vom "A" hinzufügen */
+        display: inline-block; /* Behandeln Sie es als Block-Element für die Positionierung */
+    }
+
+    .multiText {
+        /* Anpassungen für den animierten Text */
+        font-size: 20px; /* Die Größe der Schriftart anpassen, um sie lesbar zu halten */
+        white-space: nowrap; /* Verhindert das Umbruch des Textes */
+        display: inline; /* Behandeln Sie es als Block-Element für die Positionierung */
+    }
+
+    .typed-cursor {
+        /* Anpassungen für den Cursor */
+        font-size: 20px; /* Cursor an die Größe des animierten Textes anpassen */
+    }
+}
