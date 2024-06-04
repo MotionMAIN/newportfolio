@@ -7,7 +7,7 @@
   }
   
   .skill-box {
-    flex-basis: 15%; /* Reduziere die Breite jeder Box */
+    flex-basis: 15%;
     margin: 10px;
     padding: 20px;
     text-align: center;
@@ -19,7 +19,7 @@
 
   
   .skill-icon {
-    width: 40px; /* Reduziere die Größe der Icons */
+    width: 40px;
     height: 40px;
     margin-bottom: 10px;
   }
@@ -39,13 +39,13 @@
   
   @media (max-width: 1024px) {
     .skill-box {
-      flex-basis: calc(50% - 20px); /* 2 Boxen pro Zeile auf Tablets */
+      flex-basis: calc(50% - 20px);
     }
   }
   
   @media (max-width: 768px) {
     .skill-box {
-      flex-basis: calc(100% - 20px); /* 1 Box pro Zeile auf kleinen Bildschirmen */
+      flex-basis: calc(100% - 20px);
     }
   }
   

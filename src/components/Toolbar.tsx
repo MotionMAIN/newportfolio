@@ -17,10 +17,9 @@ function Toolbar({ skillsRef, projectsRef, aboutMeRef, contactRef }: ToolbarProp
       behavior: 'smooth'
     });
 
-    // Re-enable mouse events after a delay
     setTimeout(() => {
       document.body.style.pointerEvents = 'all';
-    }, 1000); // Adjust delay as needed to match scroll time
+    }, 1000);
   }
 
     return(

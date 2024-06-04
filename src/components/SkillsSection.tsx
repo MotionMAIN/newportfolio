@@ -51,7 +51,6 @@ const Skill = ({ title, icon, index }: SkillProps & { index: number }) => {
 
 const SkillsSection = () => {
   const skills = [
-    // Füge hier deine Skills hinzu, z.B.:
     { title: 'JavaScript', icon: '/path/to/javascript-icon.png' },
     { title: 'TypeScript', icon: '/path/to/javascript-icon.png' },
     { title: 'CSS', icon: '/path/to/javascript-icon.png' },
@@ -59,7 +58,6 @@ const SkillsSection = () => {
     { title: 'C', icon: '/path/to/javascript-icon.png' },
     { title: 'C#', icon: '/path/to/javascript-icon.png' },
     { title: 'Flutter/Dart', icon: '/path/to/javascript-icon.png' },
-    // Weitere Skills...
   ];
 
   return (

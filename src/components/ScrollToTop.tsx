@@ -7,7 +7,6 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Use window.scrollY to check the vertical scroll position
       if (window.scrollY > 300) {
         setShowScrollTopButton(true);
       } else {
@@ -15,10 +14,8 @@ const ScrollToTop = () => {
       }
     };
 
-    // Add the scroll event listener
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
