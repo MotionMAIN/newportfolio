@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import '../App.css';
-import KeyboardDoubleArrowUpRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowUpRounded';
+import React, { useState, useEffect } from "react";
+import "../App.css";
+import KeyboardDoubleArrowUpRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowUpRounded";
 
 const ScrollToTop = () => {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
@@ -14,23 +14,28 @@ const ScrollToTop = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
-  }
+  };
 
   return (
     <div>
-      {showScrollTopButton && <KeyboardDoubleArrowUpRoundedIcon className='arrowButtonPosition' onClick={scrollTop} />}
+      {showScrollTopButton && (
+        <KeyboardDoubleArrowUpRoundedIcon
+          className="arrowButtonPosition"
+          onClick={scrollTop}
+        />
+      )}
     </div>
   );
-}
+};
 
 export default ScrollToTop;

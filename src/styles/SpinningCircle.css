@@ -48,10 +48,10 @@
   @keyframes spin {
     from {
       transform: rotate(0deg);
-      }
+    }
     to {
       transform: rotate(360deg);
-      }
+    }
   }
   
   /* Anpassung für Tablets */
@@ -64,11 +64,13 @@
     .static-image {
       width: 330px;
       height: 430px;
+      top: 70%;
     }
   
     .circle-container {
       width: 500px;
       height: 500px;
+      top: 70%;
     }
   }
   
@@ -82,6 +84,7 @@
     .static-image {
       width: 200px;
       height: 260px;
+      align-items: center;
     }
   
     .circle-container {
