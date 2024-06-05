@@ -53,22 +53,52 @@ const Skill = ({ title, icon, index }: SkillProps & { index: number }) => {
 };
 
 const SkillsSection = () => {
-  const skills = [
+  const frontend = [
     { title: "JavaScript", icon: JSIcon },
     { title: "TypeScript", icon: TSIcon },
     { title: "CSS", icon: CSSIcon },
     { title: "HTML", icon: HTMLIcon },
+  ];
+
+  const backend = [
     { title: "C", icon: CIcon },
     { title: "C#", icon: CSharpIcon },
     { title: "Java", icon: JavaIcon },
+  ];
+
+  const mobile = [
     { title: "Flutter/Dart", icon: FlutterIcon },
   ];
 
   return (
     <div className="skills-div">
-      <span className="languages-span">Languages</span>
+      <span className="languages-span">Frontend</span>
       <div className="skills-section">
-        {skills.map((skill, index) => (
+        {frontend.map((skill, index) => (
+          <Skill
+            key={index}
+            title={skill.title}
+            icon={skill.icon}
+            index={index}
+          />
+        ))}
+      </div>
+
+      <span className="languages-span">Backend</span>
+      <div className="skills-section">
+      {backend.map((skill, index) => (
+          <Skill
+            key={index}
+            title={skill.title}
+            icon={skill.icon}
+            index={index}
+          />
+        ))}
+      </div>
+
+      <span className="languages-span">Mobile</span>
+      <div className="skills-section">
+      {mobile.map((skill, index) => (
           <Skill
             key={index}
             title={skill.title}

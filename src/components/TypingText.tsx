@@ -6,7 +6,7 @@ import "../styles/TypeWriter.css";
 const TypingEffect: React.FC = () => {
     useEffect(() => {
         const options = {
-            strings: ["Web-Developer", "App-Developer", "Software-Engineer", "Student"],
+            strings: ["Web-Developer", "App-Developer", "Software-Engineer"],
             typeSpeed: 50,
             backSpeed: 50,
             loop: true,
@@ -29,6 +29,20 @@ const TypingEffect: React.FC = () => {
             <div className="typingWrapper">
                 <span className="smallThinStaticText">A</span>
                 <span className="multiText"></span>
+            </div>
+            <div>
+
+            <a href='https://github.com/MotionMAIN' target="_blank" rel="noreferrer">
+            <button className="buttons">Github</button>
+            </a>
+
+            <a href='https://x.com/MoTionVL' target="_blank" rel="noreferrer">
+            <button className="buttons">Twitter</button>
+            </a>
+
+            <a href='mailto:jonas.lampe@proton.me' target="_blank" rel="noreferrer">
+            <button className="buttons">E-Mail</button>
+            </a>
             </div>
         </div>
     );
