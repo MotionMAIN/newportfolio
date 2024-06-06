@@ -79,6 +79,7 @@
     .container {
       width: 300px;
       height: 300px;
+      margin-top: -350px;
     }
   
     .static-image {

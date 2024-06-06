@@ -8,6 +8,7 @@ import TypingEffect from "./components/TypingText";
 import SkillsSection from "./components/SkillsSection";
 import "animate.css";
 import SpinningCircle from "./components/SpinningCircle";
+import ProjectsSection from "./components/ProjectSection";
 
 function App() {
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -16,7 +17,7 @@ function App() {
   const contactRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="App" style={{ minHeight: "100vh", backgroundColor: "#1c1b22 " }}>
+    <div className="App" style={{ minHeight: "100%", backgroundColor: "#1c1b22 " }}>
       <ScrollToTop />
       <Toolbar
             skillsRef={skillsRef}
@@ -40,6 +41,7 @@ function App() {
       </div>
       <div ref={projectsRef} className="projectsSection">
         <h3 className="sectionHeader">Projects</h3>
+        <ProjectsSection/>
       </div>
       <div ref={aboutMeRef} className="aboutMeSection">
         <h3 className="sectionHeader">About Me</h3>

@@ -23,7 +23,7 @@ function Toolbar({ skillsRef, projectsRef, aboutMeRef, contactRef }: ToolbarProp
             document.body.style.pointerEvents = 'all';
         }, 1000);
 
-        setMenuOpen(false); // Menü nach dem Scrollen schließen
+        setMenuOpen(false);
     }
 
     const toggleMenu = () => {
