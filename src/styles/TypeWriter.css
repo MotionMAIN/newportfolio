@@ -108,7 +108,7 @@ body {
         width: 90vw;
         align-items: center;
         text-align: center;
-        font-size: 40px; /* Kleinere Schriftgröße */
+        font-size: 40px;
     }
 
     .bigStaticText {

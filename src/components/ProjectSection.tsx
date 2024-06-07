@@ -17,14 +17,14 @@ const projects: Project[] = [
     description: "This portfolio is a short overview of my skills and my projects that I've done.",
     image: ProjectImage1,
     link: "https://github.com/username/project1",
-    offset: "translateY(40px)", // Vertikaler Versatz für das erste Projekt
+    offset: "translateY(40px)",
   },
   {
     title: "MotionSync",
     description: "A time management application for ensuring efficient work hour logging and analysis.",
     image: ProjectImage2,
     link: "https://github.com/username/project2",
-    offset: "translateY(-40px)", // Vertikaler Versatz für das zweite Projekt
+    offset: "translateY(-40px)",
   },
 ];
 

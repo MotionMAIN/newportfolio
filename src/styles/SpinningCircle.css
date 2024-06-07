@@ -1,7 +1,7 @@
 .container {
     position: relative;
-    width: 700px; /* Größerer Container */
-    height: 700px; /* Größerer Container */
+    width: 700px;
+    height: 700px;
   }
   
   .static-image {
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Macht das Bild rund */
+    border-radius: 50%;
     overflow: hidden;
   }
   
@@ -28,8 +28,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px; /* Gleiche Größe wie Container */
-    height: 700px; /* Gleiche Größe wie Container */
+    width: 700px;
+    height: 700px;
   }
   
   .spinning-circle {
@@ -42,7 +42,7 @@
     fill: none;
     stroke: #00ff99;
     stroke-width: 2;
-    stroke-dasharray: 20 20 80 15; /* Anpassung der Striche und Lücken */
+    stroke-dasharray: 20 20 80 15;
   }
   
   @keyframes spin {
@@ -54,7 +54,6 @@
     }
   }
   
-  /* Anpassung für Tablets */
   @media (max-width: 768px) {
     .container {
       width: 500px;
@@ -74,7 +73,6 @@
     }
   }
   
-  /* Anpassung für Smartphones */
   @media (max-width: 480px) {
     .container {
       width: 300px;
@@ -94,12 +92,12 @@
     }
   
     .spinning-circle {
-      animation: spin 8s linear infinite; /* Schnellere Drehung auf kleineren Geräten */
+      animation: spin 8s linear infinite;
     }
   
     .spinning-circle circle {
       stroke-width: 1.5;
-      stroke-dasharray: 15 15 60 10; /* Anpassung der Striche und Lücken */
+      stroke-dasharray: 15 15 60 10;
     }
   }
   

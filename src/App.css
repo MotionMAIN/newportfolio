@@ -1,22 +1,21 @@
-/* Grundlegende Stile für body und html */
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Verhindert horizontales Scrollen */
-  box-sizing: border-box; /* Bezieht Padding und Border in die Gesamtabmessungen ein */
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit; /* Vererbt box-sizing an alle Elemente */
+  box-sizing: inherit;
 }
 
 .App {
   text-align: center;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  overflow-x: hidden;
 }
 
 .homeSection {
@@ -28,11 +27,11 @@ body, html {
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row; /* Text und Bild nebeneinander */
-  align-items: center; /* Vertikale Zentrierung */
-  gap: 860px; /* Abstand zwischen Text und Bild */
-  justify-content: center; /* Zentrieren */
-  overflow: hidden; /* Verhindert weiße Ränder */
+  flex-direction: row;
+  align-items: center;
+  gap: 860px;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .leftContent {
@@ -55,19 +54,19 @@ body, html {
 .skillsSection, .projectsSection, .aboutMeSection, .contactSection {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Zentriert den Inhalt */
+  align-items: center;
   width: 100%;
   padding: 20px;
   background-color: transparent;
-  position: relative; /* Ermöglicht absolute Positionierung der Überschrift */
+  position: relative;
 }
 
 .skillsSection {
-  height: 100vh; /* Gesamte Höhe des Bildschirms */
+  height: 100vh;
 }
 
 .projectsSection, .aboutMeSection {
-  height: 100vh; /* Gesamte Höhe des Bildschirms */
+  height: 100vh;
 }
 
 .contactSection {
@@ -79,11 +78,11 @@ body, html {
   display: inline-block;
   border: 2px solid #03ff98;
   padding: 8px 16px;
-  margin-top: 0; /* Entfernt oberen Abstand */
+  margin-top: 0;
   position: absolute;
-  top: 20px; /* Abstand vom oberen Rand der Sektion */
+  top: 20px;
   left: 50%;
-  transform: translateX(-50%); /* Zentriert die Überschrift horizontal */
+  transform: translateX(-50%);
 }
 
 .arrowButtonPosition {
@@ -96,24 +95,23 @@ body, html {
   right: 20px;
 }
 
-/* Mobile Anpassungen */
 @media (max-width: 768px) {
   .homeSection {
-    flex-direction: column-reverse; /* Text und Bild untereinander, Bild oben */
+    flex-direction: column-reverse;
     align-items: center;
     gap: 100px;
     width: 100%;
   }
 
   .leftContent {
-    order: 2; /* Text unten */
+    order: 2;
     align-items: center;
   }
 
   .rightContent {
-    order: 1; /* Bild oben */
-    margin-top: -80px; /* Negative Marge, um das Bild weiter nach oben zu schieben */
-    margin-bottom: 20px; /* Abstand nach unten */
+    order: 1;
+    margin-top: -80px;
+    margin-bottom: 20px;
     justify-content: center;
   }
 
@@ -132,7 +130,7 @@ body, html {
   .sectionHeader {
     font-size: 18px;
     padding: 6px 12px;
-    top: 10px; /* Geringerer Abstand vom oberen Rand auf mobilen Geräten */
+    top: 10px;
   }
 
   .arrowButtonPosition {
@@ -143,15 +141,15 @@ body, html {
 
 @media (max-width: 480px) {
   .homeSection {
-    flex-direction: column-reverse; /* Text und Bild untereinander */
+    flex-direction: column-reverse;
     align-items: center;
     gap: 20px;
     width: 100vw;
-    height: 100vh; /* Gesamte Höhe des Bildschirms */
+    height: 100vh;
   }
 
   .rightContent {
-    margin-top: 0; /* Entfernt die negative Marge */
+    margin-top: 0;
     justify-content: center;
   }
 
@@ -163,11 +161,11 @@ body, html {
   .sectionHeader {
     font-size: 16px;
     padding: 4px 10px;
-    top: 10px; /* Geringerer Abstand vom oberen Rand auf mobilen Geräten */
+    top: 10px;
   }
 
   .skillsSection, .projectsSection, .aboutMeSection, .contactSection {
-    min-height: 100vh; /* Gesamte Höhe des Bildschirms */
+    min-height: 100vh;
     height: auto;
     padding: 20px;
     width: 100vw;
@@ -179,26 +177,25 @@ body, html {
   }
 }
 
-/* Landscape mobile Anpassungen */
 @media (max-width: 768px) and (orientation: landscape) {
   .homeSection {
-    flex-direction: row; /* Text und Bild nebeneinander */
-    align-items: center; /* Vertikale Zentrierung */
-    gap: 20px; /* Kleinere Lücke */
-    justify-content: space-around; /* Gleichmäßige Verteilung */
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
     height: 100vh;
     width: 100vw;
     padding: 10px;
-    overflow: hidden; /* Verhindert weiße Ränder */
+    overflow: hidden;
   }
 
   .leftContent, .rightContent {
     width: 45%;
-    margin-top: 0; /* Entfernt die obere Marge */
+    margin-top: 0;
   }
 
   .profilePic {
-    width: 90%; /* Größere Breite im Querformat */
+    width: 90%;
     height: auto;
   }
 
@@ -211,7 +208,7 @@ body, html {
   .sectionHeader {
     font-size: 18px;
     padding: 6px 12px;
-    top: 10px; /* Geringerer Abstand vom oberen Rand auf mobilen Geräten */
+    top: 10px;
   }
 
   .arrowButtonPosition {
