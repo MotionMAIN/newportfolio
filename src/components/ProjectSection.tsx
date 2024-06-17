@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "Portfolio",
     description: "This portfolio is a short overview of my skills and my projects that I've done.",
     image: ProjectImage1,
-    link: "https://github.com/username/project1",
+    link: "https://github.com/MotionMAIN/newportfolio",
     offset: "translateY(40px)",
   },
   {

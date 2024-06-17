@@ -9,6 +9,7 @@ import SkillsSection from "./components/SkillsSection";
 import "animate.css";
 import SpinningCircle from "./components/SpinningCircle";
 import ProjectsSection from "./components/ProjectSection";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -48,6 +49,7 @@ function App() {
       </div>
       <div ref={contactRef} className="contactSection">
         <h3 className="sectionHeader">Contact</h3>
+        <ContactSection />
       </div>
     </div>
   );
